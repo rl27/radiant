@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+from distutils.command.clean import clean
+
 from setuptools import setup
 
 # class to clean the build leftovers
@@ -53,13 +55,13 @@ if __name__ == "__main__":
             'Operating System :: Unix',
             'Operating System :: MacOS',
         ],
-        packages = ['radiant',
-                    'radiant.art',
-                    'radiant.data',
-                    'radiant.filter',
-                    'radiant.misc',
-                    'radiant.resize'
+        packages=['radiant',
+                  'radiant.art',
+                  'radiant.data',
+                  'radiant.filter',
+                  'radiant.misc',
+                  'radiant.resize'
         ],
-        install_requires = install_requires,
+        install_requires=install_requires,
         zip_safe=False,
 )
